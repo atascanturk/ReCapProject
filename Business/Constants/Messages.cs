@@ -12,5 +12,6 @@ namespace Business.Constants
         public static string Listed = "Listed successfully.";
         public static string MaintenanceTime = "Maintenance Time";
         public static string Failed = "Failed.";
+        public static string CarImageLimitExceeded = "Car image limit is exceeded.";
     }
 }
