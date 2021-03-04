@@ -3,6 +3,8 @@ using Microsoft.EntityFrameworkCore;
 using System;
 using System.Collections.Generic;
 using System.Text;
+using Core.Entities.Concrete;
+using User = Entities.Concrete.User;
 
 namespace DataAccess.Concrete.EntityFramework
 {
@@ -20,5 +22,8 @@ namespace DataAccess.Concrete.EntityFramework
         public DbSet<Rental> tbl_Rentals { get; set; }
         public DbSet<User> tbl_Users { get; set; }
         public DbSet<CarImage> tbl_CarImages { get; set; }
+        public DbSet<Core.Entities.Concrete.User> Users { get; set; }
+        public DbSet<UserOperationClaim> UserOperationClaims { get; set; }
+        public DbSet<OperationClaim> OperationClaims { get; set; }
     }
 }
